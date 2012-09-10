@@ -1,5 +1,5 @@
 bindkey '^R' history-incremental-search-backward
-bindkey "\e[3~" vi-backward-delete-char # delete
+bindkey "\e[3~" vi-delete-char # delete
 bindkey "\e[5~" beginning-of-history # page up
 bindkey "\e[6~" end-of-history # page down
 bindkey "\e[7~" beginning-of-line # Home
