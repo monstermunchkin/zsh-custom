@@ -1,6 +1,12 @@
+if [[ "${UID}" -eq 0 ]]; then
+PROMPT=$'
+%{$fg_bold[blue]%}%/%{$reset_color%} $(git_prompt_info)%{$fg[red]%}[%n@%m]%{$reset_color%} %{$fg[white]%}[%T]%{$reset_color%}
+%{$fg_bold[black]%}>%{$reset_color%} '
+else
 PROMPT=$'
 %{$fg_bold[blue]%}%/%{$reset_color%} $(git_prompt_info)%{$fg[white]%}[%n@%m]%{$reset_color%} %{$fg[white]%}[%T]%{$reset_color%}
 %{$fg_bold[black]%}>%{$reset_color%} '
+fi
 
 PROMPT2="%{$fg_blod[black]%}%_> %{$reset_color%}"
 
