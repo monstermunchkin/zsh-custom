@@ -5,6 +5,10 @@ alias pip2_upgrade_all='pip2 freeze | cut -d= -f1 | parallel sudo pip2 install -
 alias sshx='TERM=xterm-256color ssh'
 alias qemu-kvm='qemu-system-x86_64 --enable-kvm'
 alias j='jump'
+alias nl_on='sudo systemctl start openvpn@nl'
+alias us_on='sudo systemctl start openvpn@us'
+alias nl_off='sudo systemctl stop openvpn@nl'
+alias us_off='sudo systemctl stop openvpn@us'
 
 alias -s pdf='evince'
 alias -s png='mirage'
